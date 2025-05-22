@@ -1,0 +1,145 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>{{ portfolio.name }}'s Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.css">
+  
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+  <header>
+    <h1>My Skills</h1>
+      <h1 class="logo">Jamin<span>Juma</span></h1>
+      <ul class="navmenue">
+          <a href="#">About Me</a>
+          <a href="{% url 'skills' %}">Skills</a>
+          <a href="#">Projects</a>
+          <a href="#">Contacts</a>
+      </ul>
+  </header>
+  <section>
+
+
+  </section>
+  <section class="profile-detail">
+    <div class="profile">
+      <div class="details">
+        <h2>Skills <span>Offered</span></h2>
+        <p>
+          I offer a 6-page responsive business site with contactform,
+          analytics setup, and hosting, ready in 7 days.I also offer a 
+          custom admin panel with login, data filtering, and expert features,
+          fully deployed and maintained for 1 year. A fullstack web app with user auth,payment integration, 
+          and mobile responsivness, plus deployment to your custom domain
+        </p>
+      </div>
+    </div>
+    
+  </section>
+
+  <section class="skills-container">  
+    <div class="skill-category">
+      <h2>Programming Languages</h2>
+      <ul>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>C</li>
+        <li>HTML</li>
+        <li>CSS</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h2>Frameworks & Libraries</h2>
+      <ul>
+        <li>Django</li>
+        <li>Flask</li>
+        <li>React (Learning)</li>
+        <li>Bootstrap</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h2>Machine Learning</h2>
+      <ul>
+        <li>Scikit-learn</li>
+        <li>Pandas</li>
+        <li>Numpy</li>
+        <li>Matplotlib</li>
+        <li>Decision Trees, Random Forest</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h2>Tools & Platforms</h2>
+      <ul>
+        <li>Git & GitHub</li>
+        <li>VS Code</li>
+        <li>Google Colab</li>
+        <li>Jupyter Notebook</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h2>Soft Skills</h2>
+      <ul>
+        <li>Problem Solving</li>
+        <li>Teamwork</li>
+        <li>Continuous Learning</li>
+        <li>Project Management</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2>Jamin Juma</h2>
+        <p>Software Developer</p>
+        <p>Machine Learning Enthusiast</p>
+      </div>
+
+      <div class="footer-section contacts">
+        <h2>Contacts</h2>
+        <a href="#">Email</a>
+        <a href="#">Tiktok</a>
+        <a href="#">Linkedin</a>
+        <a href="#">Whatsapp</a>
+        <a href="#">Facebook</a>
+        <a href="#">Upwork</a>
+      </div>
+
+      <div class="footer-section links">
+        <h2>Projects</h2>
+        <a href="#">Machine Learning Projects</a>
+        <a href="#">Website Projects</a>
+        <a href="#">Collaboration Projects</a>
+      </div>
+
+      <div class="footer-section skills">
+        <h2>Skills</h2>
+        <a href="#">Python</a>
+        <a href="#">Django</a>
+        <a href="#">Machine Learning</a>
+        <a href="#">HTML</a>
+        <a href="#">CSS</a>
+        <a href="#">JavaScript</a>
+        <a href="#">Graphic Design</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Jamin Juma | All rights reserved
+    </div>
+  </footer>
+   <script src="{% static 'css/jamin.js' %}"></script>
+</body>
+</html>

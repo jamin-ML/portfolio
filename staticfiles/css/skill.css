@@ -1,0 +1,37 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f8;
+  color: #333;
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+}
+
+.skill-category h2 {
+  color: #f7c04a;
+  margin-bottom: 15px;
+}
+
+.skill-category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.skill-category li {
+  margin: 8px 0;
+  padding-left: 15px;
+  position: relative;
+}
+
+.skill-category li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #1e1e2f;
+  font-weight: bold;
+}
+
+
