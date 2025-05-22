@@ -486,3 +486,10 @@ footer {
     padding: 3px 10px;
     border-radius: 2px;
 }
+
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 1001;
+    cursor: pointer;
+}

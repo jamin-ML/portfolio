@@ -33,7 +33,7 @@ header{
     transition: all .45s ease;
     font-size: 20x;
     font-weight: 400;
-    color: #f31717;
+    color: #000;
 }
 .navmenue a:hover{
     color: red;
@@ -96,7 +96,7 @@ section{
 .tech-icon.sql    { bottom: 20%; left: 10%; }
 .tech-icon.python { bottom: 10%; right: 25%; }
 .tech-icon.django  { top: 50%; left: 50%; }
-.tech-icon.django  { top: 10%; left: 5%; }
+
 
 .main-text h1{
     font-size: 40px;
@@ -124,6 +124,24 @@ section{
 
 }
 .main-btn:hover{
+    background-color: #000;
+    color: #fff;
+}
+/*Project button*/
+.skills{
+    border: 2px solid #2c2c2c;
+    padding: 12px 25px;
+    display: inline-block;
+    text-transform: capitalize;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all .42s ease;
+    margin-top: 20px;
+    border-radius: 2px;
+
+}
+.skills:hover{
     background-color: #000;
     color: #fff;
 }
@@ -184,7 +202,7 @@ header.sticky{
 .card p{
     font-size: 16px;
     font-weight: 500;
-    color: #333c56;
+    color: #aaa;
     line-height: 1.6;
     margin-top: 10px;
     margin-left: 5px;
@@ -248,12 +266,14 @@ h2 span{
     font-size: 20px;
     font-weight: 600;
     color: #111;
+    padding-top: 30px;
 }
 .profile img{
     width: 350px;
     height: 300px;
     border-radius: 150px;
 }
+
 .bg-section {
   position: relative;
   height: 100vh;
@@ -378,4 +398,98 @@ footer {
   left: 0;
   color: #1e1e2f;
   font-weight: bold;
+}
+
+.details h2{
+  text-align: center;
+  font-weight: 600;
+  font-size: 26px;
+  text-transform: capitalize;
+  transition: all .45s ease;
+}
+
+#ml{
+  margin-top: 0;
+  padding-top: 0px;
+}
+
+
+.profile-detail a{
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #111;
+  padding: 12px 12px ;
+  display: inline-block;
+  margin-top: 20px;
+}
+.profile-detail a:hover{
+  background-color: #EE1c47;
+  color: #fff;
+}
+
+.project-grid h5 a{
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #111;
+  padding: 12px 12px ;
+  display: inline-block;
+  margin-top: 20px;
+}
+.project-grid h5 a:hover{
+  background-color: #EE1c47;
+  color: #fff;
+}
+/*This is the contacts section */
+.contact a{
+  display: block;
+  color: #111;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.contact a:hover{
+  transform: scale3d(1.1);
+  color: #ee0a0a;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.contact h1{
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+
+}
+.contact p{
+  color: #000;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contacts-page{
+  background-color: #a8a2a2;
+}
+
+/*Product text*/
+.product-text h5{
+    position: absolute;
+    top: 13px;
+    left: 26px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: #27b737;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+#menu-icon{
+    font-size: 35px;
+    color: #2c2c2c;
+    z-index: 1001;
+    cursor: pointer;
 }
