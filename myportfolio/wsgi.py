@@ -1,22 +1,11 @@
-"""
-WSGI config for myportfolio project.
-
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/5.2/howto/deployment/wsgi/
-"""
-
 import os
-
 from django.core.wsgi import get_wsgi_application
+from whitenoise import WhiteNoise
 
+# Make sure this matches the actual name of your project folder
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myportfolio.settings')
 
 application = get_wsgi_application()
 
-from django.core.wsgi import get_wsgi_application
-from whitenoise import WhiteNoise
-
-application = get_wsgi_application()
-application = WhiteNoise(application, root='staticfiles')
+# Update the path below if needed
+application = WhiteNoise(application, root='/home/jjmljuma/myportfolio/staticfiles')
