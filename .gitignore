@@ -1,18 +1,20 @@
-# Python
-__pycache__/
-*.py[cod]
+# Local development files to ignore
 *.sqlite3
-*.log
-
-# Environment
+*.pyc
+__pycache__/
 .env
+.env.local
+.venv/
 venv/
-.env/
 
-# Django
-staticfiles/
-media/
-
-# VSCode / PyCharm
-.vscode/
+# Editor files
 .idea/
+.vscode/
+*.swp
+*.swo
+
+# But KEEP these for production:
+!staticfiles/
+!requirements.txt
+!Procfile
+!runtime.txt
