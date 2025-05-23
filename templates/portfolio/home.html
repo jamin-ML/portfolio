@@ -1,9 +1,10 @@
 {% load static %}
+<!-- templates/about.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>{{ portfolio.name }}'s Portfolio</title>
+  <meta charset="UTF-8" />
+     <title>{{ portfolio.name }}'s Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -11,102 +12,25 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body>
-
     <header>
         <h1 class="logo">Jamin<span>Juma</span></h1>
         <ul class="navmenue">
-            <a href="{% url 'dashboard' %}">About Me</a>
+            <a href="#">About Me</a>
             <a href="{% url 'skills' %}">Skills</a>
-            <a href="#trending ">Projects</a>
-            <a href="#contucts ">Contacts</a>
+            <a href="#">Projects</a>
+            <a href="#">Contacts</a>
         </ul>
-        <div class="nav-icon">
-            <div class="bx bx-menu" id="menu-icon"><i></i></div>
-        </div>
     </header>
+    <section>
 
-  <section class="description">
-  <div class="main-text">
-      <h3>Software Dev:</h3>
-      <h1>Hi I'm <br>Juma Jamin <br>Software Developer <br>Machine Learning enthusiast.</h1>
-      <p>We Give solutions</p>
-      <a href="#trending" class="main-btn">Projects<i class="bx bx-right-arrow-alt"></i></a>
-      <div class="arrow-down">
-      <a href="{% url 'skills' %}" class="skills">Skills And Tools</a>
-      </div>
-  </div>
-
-  <!-- Floating tech logos -->
-  <div class="floating-icons">
-    <img src="{% static 'images/html.png' %}" class="tech-icon html">
-    <img src="{% static 'images/css.png' %}" class="tech-icon css">
-    <img src="{% static 'images/sql.png' %}" class="tech-icon js">
-    <img src="{% static 'images/python.png' %}" class="tech-icon python">
-    <img src="{% static 'images/django.png' %}" class="tech-icon flask">
-    <img src="{% static 'images/ml.png' %}" class="tech-icon flask">
-  </div>
-</section>
-
-  <section class="bg-section" style="background-image: url('{{portfolio.profile_image.url}}');">
-
- </section>
-
-    <section class="profile-detail" id="about">
+        
+    </section>
+  <section class="profile-detail">
     <div class="profile">
         <div class="details">
-          <h2>About <span>Me</span></h2>
             <h1>{{ portfolio.name }}</h1>
             <p>{{ portfolio.bio }}</p>
         </div>
-    </div>
-    <a href="{% url 'skills' %}">Skills And Tools</a>
-  </section>
-
-  <section class="projects" id="trending">
-    <h2>Website <span>Projects</span></h2>
-    <div class="project-grid">
-      {% for project in projects %}
-        <div class="card">
-          <img src="{{ project.image.url }}" alt="{{ project.title }}">
-          <div class="product-text">
-            <h5>Sale</h5>
-          </div>
-          <h3>✅ {{ project.title }}</h3>
-          <p>{{ project.description }}</p>
-          <a href="{{ project.urls }}" target="_blank">View Project</a>
-        </div>
-      {% endfor %}
-    </div>
-  </section>
-
-    <section class="projects" id="ml">
-    <h2>Machine Learning <span>Projects</span></h2>
-    <div class="project-grid">
-      {% for mlprojec in mlprojecs %}
-        <div class="card">
-          <img src="{{ mlprojec.image.url }}" alt="{{ mlprojec.title }}">
-          <div class="product-text">
-            <h5>Sale</h5>
-          </div
-          <h3>✅ {{ mlprojec.title }}</h3>
-          <p>{{ mlprojec.description }}</p>
-          <a href="{{ project.urls }}" target="_blank">View Project</a>
-        </div>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="contacts-page" id="contucts">
-    <div class="contact">
-     
-      <h1> Lets conect:</h1>
-      <a href="">Linkedin</a>
-      <a href="">Facebook</a>
-      <a href="">Upworks</a>
-      <a href="">Email</a>
-      <a href="">Instergram</a>
-      <p>Alwys avilable for Work!</p>
-
     </div>
   </section>
   <footer>
@@ -119,7 +43,7 @@
 
     <div class="footer-section contacts">
       <h2>Contacts</h2>
-      <a href="jumajamin55@gmail.com">Email</a>
+      <a href="#">Email</a>
       <a href="#">Tiktok</a>
       <a href="#">Linkedin</a>
       <a href="#">Whatsapp</a>
@@ -129,27 +53,26 @@
 
     <div class="footer-section links">
       <h2>Projects</h2>
-      <a href="{% url 'skills' %}">Machine Learning Projects</a>
-      <a href="{% url 'skills' %}">Website Projects</a>
-      <a href="{% url 'skills' %}">Collaboration Projects</a>
+      <a href="#">Machine Learning Projects</a>
+      <a href="#">Website Projects</a>
+      <a href="#">Collaboration Projects</a>
     </div>
 
     <div class="footer-section skills">
       <h2>Skills</h2>
-      <a href="{% url 'skills' %}">Python</a>
-      <a href="{% url 'skills' %}">Django</a>
-      <a href="{% url 'skills' %}">Machine Learning</a>
-      <a href="{% url 'skills' %}">HTML</a>
-      <a href="{% url 'skills' %}">CSS</a>
-      <a href="{% url 'skills' %}">JavaScript</a>
-      <a href="{% url 'skills' %}">Graphic Design</a>
+      <a href="#">Python</a>
+      <a href="#">Django</a>
+      <a href="#">Machine Learning</a>
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JavaScript</a>
+      <a href="#">Graphic Design</a>
     </div>
   </div>
   <div class="footer-bottom">
     &copy; 2025 Jamin Juma | All rights reserved
   </div>
 </footer>
-
-  <script src="{% static 'css/jamin.js' %}"></script>
+    <script src="{% static 'css/jamin.js' %}"></script>
 </body>
 </html>

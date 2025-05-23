@@ -8,4 +8,4 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'myportfolio.settings')
 application = get_wsgi_application()
 
 # Update the path below if needed
-application = WhiteNoise(application, root='/home/jjmljuma/myportfolio/staticfiles')
+application = WhiteNoise(application, root='/home/jaminDev/myportfolio/staticfiles')
